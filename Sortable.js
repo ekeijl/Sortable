@@ -735,7 +735,7 @@
 				}
 
 
-				if ((el.children.length === 0) || (el.children[0] === ghostEl) ||
+				if ((el.children.length === 0) || el.contains(ghostEl) ||
 					(el === evt.target) && (_ghostIsLast(el, evt))
 				) {
 					//assign target only if condition is true
